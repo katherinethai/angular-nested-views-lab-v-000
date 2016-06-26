@@ -43,11 +43,14 @@
 <body>
 
 <div ng-app="app" class="app">
-    <div ui-view></div>
+    <div class="home">
+        <a ui-sref="home.timeline">Timeline</a> - <a ui-sref="home.notifications">Notifications</a> - <a ui-sref="home.user">Profile</a>
+        <div ui-view></div>
+    </div>
 </div>
 
 <script src="js/angular.js"></script>
-<script src="js/angular-route.js"></script>
+<script src="js/angular-ui-router.js"></script>
 <script src="js/app/app.js"></script>
 
 </body>
